@@ -1,44 +1,51 @@
 # rock_paper_scissors
-from random import *
+
+# DEBUT 
+
+
+# Importe la fonction random
+
+
+# Definir la fonction choix_utilisateur avec pour parametre joueur 
+    # Definir input de pierre, papier ou ciseaux a la fonction joueur 
+    # Tant que joueur n'a pas entre pierre, papier ou ciseaux
+        # Alors definir input de pierre papier et ciseaux a la fonction joueur 
+    # Retourner la fonction joueur 
  
-def choix_utilisateur():
-    """Cette fonction permet au joueur de choisir son mouvement"""
-    joueur = input("Pierre\nPapier\nCiseaux\n")
-    while joueur not in ["pierre","papier","ciseaux"]:
-        joueur = input("pierre\npapier\nciseaux\n")
-    return(joueur)
+
+# Definir la fonction choix_ordinateur avec pour parametre nb et ordi
+    # Definir un nombre aleatoire de 1 a 3 a la fonction nb
+    # Si la fonction nb est egal a 1
+        # Alors definir "pierre" à la fonction ordi
+    # Sinon si la fonction nb est egal a 2
+        # Alors definir "papier" à la fonction ordi
+    # sinon
+        # Alors definir "ciseaux" a la fonction ordi
+    # Retourner la fonction ordi
  
-def choix_ordinateur():
-    """Cette fonction permet à l'ordinateur de générer aléatoirement un mouvement"""
-    n = randint(1,3)
-    if n == 1:
-        ordi = "pierre"
-    elif n==2:
-        ordi = "papier"
-    else:
-        ordi = "ciseaux"
-    return(ordi)
+# Ecrire la fonction choix_ordinateur
+
+# si la fonction choix_utilisateur est egal à "pierre" et que la fonction choix_ordinateur est egal à "ciseaux" 
+    # Alors ecrire "Vous avez gagné." 
+# sinon si la fonction choix_utilisateur est egal à "pierre" et que la fonction choix_ordinateur est egal à "papier" 
+    # Alors ecrire "Vous avez perdu." 
+# sinon si la fonction choix_utilisateur est egal à "pierre" et que la fonction choix_ordinateur est egal à "pierre" 
+    # Alors ecrire "Dommage égalité."
  
-a = choix_utilisateur()
-b = choix_ordinateur()
-print(b)
-if a == "pierre" and b == "ciseaux":
-    print("Vous avez gagne.")
-elif a == "pierre" and b == "papier":
-    print("Vous avez perdu.")
-elif a == "pierre" and b == "pierre":
-    print("Egalite.")
- 
-if a == "papier" and b == "pierre":
-    print("Vous avez gagne.")
-elif a == "papier" and b == "ciseaux":
-    print("Vous avez perdu.")
-elif a == "papier" and b == "papier":
-    print("Egalite.")
- 
-if a == "ciseaux" and b == "papier":
-    print("Vous avez gagne.")
-elif a == "ciseaux" and b == "pierre":
-    print("Vous avez perdu.")
-elif a == "ciseaux" and b == "ciseaux":
-    print("Egalite.")
+
+# si la fonction choix_utilisateur est egal à "papier" et que la fonction choix_ordinateur est egal à "pierre" 
+    # Alors ecrire "Vous avez gagné." 
+# sinon si la fonction choix_utilisateur est egal à "papier" et que la fonction choix_ordinateur est egal à "ciseaux " 
+    # Alors ecrire "Vous avez perdu." 
+# sinon si la fonction choix_utilisateur est egal à "papier" et que la fonction choix_ordinateur est egal à "papier" 
+    # Alors ecrire "Dommage égalité."
+
+# si la fonction choix_utilisateur est egal à "ciseaux" et que la fonction choix_ordinateur est egal à "papier" 
+    # Alors ecrire "Vous avez gagné." 
+# sinon si la fonction choix_utilisateur est egal à "ciseaux" et que la fonction choix_ordinateur est egal à "pierre" 
+    # Alors ecrire "Vous avez perdu." 
+# sinon si la fonction choix_utilisateur est egal à "ciseaux" et que la fonction choix_ordinateur est egal à "ciseaux" 
+    # Alors ecrire "Dommage égalité."
+
+
+#FIN
